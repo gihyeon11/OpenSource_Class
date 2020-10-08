@@ -2,13 +2,13 @@ def findPrime(x,y):
     print(x,"부터",y,"사이의 소수 :", end=' ')
     count=0
 
-    for i in range(x,y+1) :
-        for j in range(2,int(x/2)) :
-            if i % j ==0 :
+    for a in range(x,y+1) :
+        for b in range(2,int(x/2)) :
+            if a % b ==0 :
                 break
 
         else :
-            print(i,end=' ')
+            print(a,end=' ')
             count=count+1
     else :
         print()
